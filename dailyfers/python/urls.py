@@ -2,8 +2,7 @@ from django.conf.urls import url
 import views
 
 
-urlpatterns = [
-               url(r"^index/$", views.index),
+urlpatterns = [url(r"^index/$", views.index),
                url(r"^register/$", views.register),
                url(r"^register_handle/$", views.register_handle),
                url(r"^login/$", views.login),
@@ -13,5 +12,7 @@ urlpatterns = [
                url(r"^detail/$", views.detail),
                url(r"^list/$", views.list),
                url(r"^qubu/$", views.qubu),
-                url(r"^user_center_order/$", views.user_center_order),
+               url(r"^user_center_order/$", views.user_center_order),
+               url(r"^cart/$", views.cart),
+               url(r"^index_2/$", views.index_2),
                ]

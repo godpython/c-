@@ -37,8 +37,11 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "python",
-    "tinymce",
+    "python1",
+    "python2",
+    "python3",
+    "python4",
+    "python5"
 
 )
 
@@ -55,10 +58,11 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'dailyfers.urls'
 
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,"templates")],
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -30,8 +30,10 @@ class GoodsInfo(models.Model):
     gjianjie = models.CharField(max_length=200)
     gunit = models.CharField(max_length=50)
     gjieshao = HTMLField()# fu wen ping bian yi qi
-    gcilck = models.IntegerField(default=0)# ren qi lei xing
-    gkuzhu = models.IntegerField(default=1000)# ku zhu liang
+    gclick = models.IntegerField(default=0)# ren qi lei xing
+    gkucun = models.IntegerField(default=1000)# ku zhu liang
+
+
 
     def __str__(self):
         return self.title.encode("utf-8")

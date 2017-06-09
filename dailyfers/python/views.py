@@ -5,6 +5,7 @@ from models import UserInfo
 from hashlib import sha1
 from django.http import JsonResponse,HttpResponseRedirect
 from . import user_decorator
+from models import *
 
 
 # Create your views here.
@@ -128,7 +129,8 @@ def qubu(request):
 
 def user_center_order(request):
     """"""
-    return render(request, "booktest/user_center_order.html")
+    contest = {"title":"全部商品", "titl":"-ni-shi-wo-de-sheng", "youghe":"退出"}
+    return render(request, "booktest/user_center_order.html", contest)
 #
 # @user_decorator.login
 # def user_center_info(request, pindex):
@@ -183,3 +185,22 @@ def user_center_order(request):
 #                }
 #
 #     return render(request, "booktest/user_center_site.html", contest)
+
+def cart(request):
+    """"""
+    contest = {"title": "你的车", "titl": "-ni-shi-wo-de-sheng", "youghe": "退出"}
+    return render(request, "booktest/cart.html", contest)
+
+
+def place(request):
+    """"""
+    contest = {"title": "你的车", "titl": "-ni-shi-wo-de-sheng", "youghe": "退出"}
+    return render(request, "booktest/place_order.html", contest)
+
+def index_2(request):
+    """"""
+    contest = {"title":"ha ha"}
+    return render(request, "booktest/index_2.html", contest)
+
+
+

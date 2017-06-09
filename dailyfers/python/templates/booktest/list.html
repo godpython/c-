@@ -1,9 +1,5 @@
 {% extends "base_foot.html" %}
 
-{#{% block head %}#}
-{#    <title>天天生鲜-列表页</title>#}
-{#{%  endblock head %}#}
-
 {% block body %}
 <body>
 	<div class="header_con">
@@ -22,16 +18,16 @@
 					<span>|</span>
 					<a href="/user_center_info/">用户中心</a>
 					<span>|</span>
-					<a href="cart.html">我的购物车</a>
+					<a href="/cart/">我的购物车</a>
 					<span>|</span>
-					<a href="user_center_order.html">我的订单</a>
+					<a href="/user_center_order/">我的订单</a>
 				</div>
 			</div>
 		</div>		
 	</div>
 
 	<div class="search_bar clearfix">
-		<a href="index.html" class="logo fl"><img src="/static/images/logo.png"></a>
+		<a href="#" class="logo fl"><img src="/static/images/logo.png"></a>
 		<div class="search_con fl">
 			<input type="text" class="input_text fl" name="" placeholder="搜索商品">
 			<input type="button" class="input_btn fr" name="" value="搜索">
@@ -48,12 +44,14 @@
 				<h1>全部商品分类</h1>	
 				<span></span>			
 				<ul class="subnav">
-					<li><a href="#" class="fruit">新鲜水果</a></li>
+
+					<li><a href="#" class="fruit">我的最爱</a></li>
 					<li><a href="#" class="seafood">海鲜水产</a></li>
 					<li><a href="#" class="meet">猪牛羊肉</a></li>
 					<li><a href="#" class="egg">禽类蛋品</a></li>
 					<li><a href="#" class="vegetables">新鲜蔬菜</a></li>
 					<li><a href="#" class="ice">速冻食品</a></li>
+
 				</ul>
 			</div>
 			<ul class="navlist fl">
@@ -78,6 +76,7 @@
 				<h3>新品推荐</h3>
 				<ul>
 					<li>
+                         <h4><a href="#">{{ book.gtitle }}</a></h4>
 						<a href="#"><img src="/static/images/goods/goods001.jpg"></a>
 						<h4><a href="#">进口柠檬</a></h4>
 						<div class="prize">￥3.90</div>
