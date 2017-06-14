@@ -21,4 +21,5 @@ urlpatterns = [
     url(r"^", include("python7.urls")),
     url(r"^user/", include("python8.urls")),
     url(r"^url/", include("python9.urls")),
+    url(r"^python/", include("python10.urls")),
 ]

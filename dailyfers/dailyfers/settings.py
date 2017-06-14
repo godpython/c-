@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     "python8",
     "python9",
+    "python10",
 )
 
 MIDDLEWARE_CLASSES = (
