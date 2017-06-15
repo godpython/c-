@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     "python8",
     "python9",
     "python10",
+    "python11",
 )
 
 MIDDLEWARE_CLASSES = (
